@@ -1,0 +1,44 @@
+{
+	"name": "shawnthompson.ca/blog",
+	"version": "1.0.0",
+	"description": "A website built from a [boilerplate](https://github.com/shawnthompson/shawnthompson.github.io) for building a fast static website with the Eleventy static site generator, for deployment to Netlify. Using Decap CMS",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"eleventy": "npx eleventy",
+		"watch:eleventy": "eleventy --serve",
+		"sass-start": "sass src/_scss/base.scss _site/static/css/custom.css",
+		"sass-build": "sass --style=compressed src/_scss/base.scss _site/static/css/custom.css",
+		"watch:sass": "npm run sass-start -- --watch",
+		"start": "npm-run-all sass-start --parallel watch:*",
+		"build": "npm-run-all sass-build eleventy",
+		"debug": "DEBUG=* npx eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shawnthompson/blog"
+	},
+	"author": {
+		"name": "Shawn Thompson",
+		"email": "shawn@shawnthompson.ca",
+		"url": "https://shawnthompson.github.io/"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/shawnthompson/blog/issues"
+	},
+	"homepage": "https://shawnthompson.github.io/blog",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"luxon": "^3.4.4",
+		"markdown-it": "^14.1.0",
+		"markdown-it-anchor": "^9.0.1",
+		"npm-run-all": "^4.1.5",
+		"sass": "^1.77.4"
+	},
+	"dependencies": {
+		"@11ty/eleventy-navigation": "^0.3.5",
+		"clean-css": "^5.3.3",
+		"html-minifier": "^4.0.0",
+		"uglify-js": "^3.18.0"
+	}
+}
