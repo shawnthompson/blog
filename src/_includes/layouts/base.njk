@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+	{% include "components/head.njk" %}
+
+	<body>
+
+		{% include "components/svg.njk" %}
+
+		{% include "components/header.njk" %}
+
+		<main class="flex-shrink-0">
+			<div class="p-5 mb-4 bg-body-tertiary">
+				<div class="container py-5">
+					<h1 class="display-5 fw-bold">{{ title }}</h1>
+					<p class="col-md-8 fs-4">{{ metaDescription or renderData.metaDescription or metadata.description }}</p>
+					{% include "components/toggle-button.njk" %}
+				</div>
+			</div>
+			<div class="container pt-3 display-8">
+				{{ layoutContent | safe }}
+			</div>
+		</main>
+
+		{% include "components/footer.njk" %}
+
+		{% include "components/js.njk" %}
+
+	</body>
+
+</html>
