@@ -93,10 +93,10 @@ module.exports = function (eleventyConfig) {
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "njk",
 		dir: {
-			input: "./src",
+			input: "src",
 			includes: "_includes",
 			data: "_data",
-			output: "_site"
+			output: "_site",
 		}
 	};
 };
