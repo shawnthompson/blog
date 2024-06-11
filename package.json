@@ -19,14 +19,12 @@
 	},
 	"author": {
 		"name": "Shawn Thompson",
-		"email": "shawn@shawnthompson.ca",
-		"url": "https://shawnthompson.github.io/"
+		"email": "shawn@shawnthompson.ca"	
 	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/shawnthompson/blog/issues"
 	},
-	"homepage": "https://shawnthompson.github.io/blog",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"luxon": "^3.4.4",
