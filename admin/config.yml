@@ -2,7 +2,6 @@ backend:
   name: github
   branch: main # Branch to update (optional; defaults to master)
   repo: shawnthompson/blog
-  api_root: https://api.github.com
 
 media_folder: "src/_uploads" # Folder where user uploaded files should go
 public_folder: "/uploads" # Folder accessible from the public
